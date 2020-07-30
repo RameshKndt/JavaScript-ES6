@@ -255,9 +255,52 @@ It will execute the function in future, but binding of the object can be done no
   To the return bound function at a later time (at the time of invocation)
   
   
+Arrow Functions: 
+----------------
+- It were introduced in ES6.
+- Provides an alternative way to write the concise / shorter syntax compared to the function expression.
 
+let sum = function(a,b) {return (a+b);}
 
+Syntax:
+-------
+=>(Fat Arrow), -> (thin arrow)
+1. (param1,param2,...,paramN)=>{statements}
 
+2. (param1,param2,...,paramN)=> expression
+   
+    (param1,param2,...,paramN)=> {return expression;}
+3. (singleParam)=>{statements}
+    singleParam =>{statements}
+4. With No parameters
+   ()=>{statements}
+
+ Rule : No line break after the arrow function parameters to the Fat arrow(=>)  
+   	
+No Seperate this :
+
+- An arrow fnc does not have its own this value, enclosing the lexical scope is used.
+
+	
+Default Parameters:
+------------------
+
+function sum(a=10,b=100){
+	return a+b;
+}
+
+Rest Parameters :  (...)
+-----------------
+- Allow us to create a function with the variable length parameters.
+
+- All the arguments of the func , combined into an array.
+
+- A rest parameter is indicated by the three dots (...) preceded by parameter name.
+
+Restrictions
+-------------
+1. There must be only one rest parameter for the function.
+2. rest parameter must always be the last parameter.
 
 
 
